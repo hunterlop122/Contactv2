@@ -11,7 +11,7 @@
 			if (mysqli_multi_query($conn, $sql)) {
 			   // echo "New records created successfully";
 			} else {
-			    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+			    //echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 			}
 ?>
 
