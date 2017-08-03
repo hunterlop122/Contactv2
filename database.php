@@ -25,9 +25,6 @@
 
 	mysqli_close($conn);
 
-	$servername = "localhost";
-	$username = "root";
-	$password = "root";
 	$mydb = "formC";
 
 	// Create connection

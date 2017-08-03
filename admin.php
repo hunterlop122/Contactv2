@@ -1,20 +1,27 @@
 <?php include("includes/layout/header.php");?>
-
+<?php include("database.php");?>
 <?php
-    // Start the session
-    ob_start();
-    session_start();
+  $result = mysqli_query($conn, "SELECT * FROM loginC");
 
-    // Check to see if actually logged in. If not, redirect to login page
-    if (!isset($_SESSION['loggedIn']) || $_SESSION['loggedIn'] == false) {
-        header("Location: index.php");
-    }
+echo "<table border='1'>
+<tr>
+<th>Username</th>
+<th>Password</th>
+</tr>";
+
+while($row = mysqli_fetch_array($result))
+{
+echo "<tr>";
+echo "<td>" . $row['username'] . "</td>";
+echo "<td>" . $row['password'] . "</td>";
+echo "</tr>";
+}
 ?>
 
+<body>
 
-<h1>Logged In!</h1>
-<form method="post" action="logout.php">
-    <input type="submit" value="Logout">
-</form>
+	<h1>Welcome Admin!</h1>
 
-<?php include("includes/layout/footer.php");?>
+  <script src="js/scripts.js"></script>
+
+</body>
