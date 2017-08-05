@@ -15,23 +15,15 @@ if(isset($_POST["submit"])) {
 	}
 }
 
+echo "<a href='logout.php'>Logout</a>";
+
 ?>
 
-<!doctype html>
 
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-
-  <title>Login</title>
-
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
-
-</head>
 
 <body>
 	<form action="new_user.php" method="post">
-		<label>New User</label>
+		<h1>New User</h1>
 		<br>
 		<label>Username:</label>
 		<input type="text" id="username" name="username">
@@ -43,3 +35,5 @@ if(isset($_POST["submit"])) {
 	</form>
   <script src="js/scripts.js"></script>
 </body>
+
+<?php include("includes/layout/footer.php");?>
