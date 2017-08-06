@@ -21,6 +21,9 @@
       </div>
       </form>
 
+<div>
+      <a href="login.php"><button>Login</button></a>
+</div>
 
 </body>
 <?php mysqli_close($conn);?>

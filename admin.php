@@ -9,7 +9,7 @@
 <body>
 
 <h1>Welcome User</h1>
-<div>
+<div id="dataCtb">
 <?php
 echo "This is the Members Area
 ";
@@ -35,7 +35,7 @@ echo "</tr>";
 ?>
 </div>
 <br>
-<div>
+<div id="loginCtb">
 <?php
 echo "<table border='1'>
 <tr>

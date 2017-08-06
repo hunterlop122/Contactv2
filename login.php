@@ -37,6 +37,7 @@ echo '<META HTTP-EQUIV="refresh" content="0;URL=' . $URL . '">';
 
 
 <body>
+	<div id="login">
 	<form action="login.php" method="post">
 		<label>Username:</label>
 		<input type="text" id="username" name="username">
@@ -46,6 +47,7 @@ echo '<META HTTP-EQUIV="refresh" content="0;URL=' . $URL . '">';
 		<br>
 		<input type="submit" id="submit" name="submit">
 	</form>
+</div>
   <script src="js/scripts.js"></script>
 </body>
 <?php include("includes/layout/footer.php");?>
